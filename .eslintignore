@@ -1,0 +1,4 @@
+dist/
+example/
+src/**.stories.tsx
+coverage
