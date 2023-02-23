@@ -1,10 +1,10 @@
 {
-  "name": "@agendaedu/ae-web-components",
-  "description": "Agenda Edu React Components Library",
-  "version": "3.0.3",
+  "name": "ds-demo-lib",
+  "description": "Web React Components Library Demo",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/ae-web-components.esm.js",
+  "module": "dist/ds-demo-lib.esm.js",
   "jsnext:main": "dist/index.es.js",
   "typings": "dist/index.d.ts",
   "publishConfig": {
@@ -17,7 +17,7 @@
   "engines": {
     "node": ">=12"
   },
-  "repository": "git@github.com:agendaedu/ae-web-components.git",
+  "repository": "git@github.com:alancleyton/ds-demo-lib.git",
   "scripts": {
     "start": "yarn storybook",
     "build": "tsdx build",
@@ -28,22 +28,16 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "android": "react-native run-android",
     "clean:tags": "git tag -l | xargs git tag -d && git fetch --tags",
     "generate": "plop",
     "prebuild": "rimraf dist",
-    "prepare:version": "scripts/./prepare_version.sh",
     "pretest": "jest --clearCache",
     "prettify": "prettier --check src --write",
-    "send:codecov:report": "scripts/./send_codecov_report.sh",
-    "set:git:hooks": "scripts/./set_git_hooks.sh",
-    "sync:current:branch": "cross-env scripts/./sync_current_branch.sh",
     "test:changed": "jest -o",
     "test:ci": "jest --ci --maxWorkers=2 --collectCoverage",
     "test:coverage": "jest --coverage --colors",
     "test:staged": "jest --ci --findRelatedTests",
-    "test:watch": "jest --watch",
-    "version:if_main_branch": "cross-env scripts/./version_if_main_branch.sh"
+    "test:watch": "jest --watch"
   },
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": [
