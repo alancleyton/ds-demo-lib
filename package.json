@@ -1,5 +1,5 @@
 {
-  "name": "@alancleyton67/ds-demo-lib",
+  "name": "@alancleyton67/dsdemolib",
   "description": "Web React Components Library Demo",
   "version": "0.0.1",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "jsnext:main": "dist/index.es.js",
   "typings": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org"
   },
   "files": [
     "dist",
@@ -56,12 +56,10 @@
   "peerDependencies": {
     "@emoji-mart/data": "^1.0.8",
     "@emoji-mart/react": "^1.0.1",
-    "@hookform/resolver": "^2.9.10",
     "flatlist-react": "^1.5.6",
     "linkify-react": "^4.0.2",
     "linkifyjs": "^4.0.2",
     "react": ">=16",
-    "react-hook-form": "^7.39.7",
     "react-modal": "^3.16.1",
     "react-spinners": "^0.13.6",
     "reactjs-popup": "^2.0.5",
@@ -137,23 +135,20 @@
   "dependencies": {
     "@emoji-mart/data": "^1.0.8",
     "@emoji-mart/react": "^1.0.1",
-    "@hookform/resolvers": "^2.9.10",
+    "@types/styled-system": "*",
     "caniuse-lite": "^1.0.30001434",
     "flatlist-react": "^1.5.6",
     "linkify-react": "^4.0.2",
     "linkifyjs": "^4.0.2",
-    "react-hook-form": "^7.39.7",
+    "polished": "*",
     "react-modal": "^3.16.1",
     "react-select": "^5.7.0",
     "react-spinners": "^0.13.6",
     "reactjs-popup": "^2.0.5",
-    "tinycolor2": "^1.4.2",
-    "yup": "^0.32.11",
-    "styled-system": "*",
-    "@types/styled-system": "*",
     "styled-components": "*",
-    "polished": "*",
-    "@hookform/resolver": "*"
+    "styled-system": "*",
+    "tinycolor2": "^1.4.2",
+    "yup": "^0.32.11"
   },
   "bundleDependencies": [
     "styled-system",
@@ -164,8 +159,6 @@
     "linkify-react",
     "flatlist-react",
     "yup",
-    "react-hook-form",
-    "@hookform/resolver",
     "react-modal",
     "reactjs-popup",
     "@emoji-mart/data",
