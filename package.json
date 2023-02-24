@@ -1,5 +1,5 @@
 {
-  "name": "ds-demo-lib",
+  "name": "@alancleyton67/ds-demo-lib",
   "description": "Web React Components Library Demo",
   "version": "0.0.1",
   "license": "MIT",
@@ -17,7 +17,10 @@
   "engines": {
     "node": ">=12"
   },
-  "repository": "git@github.com:alancleyton/ds-demo-lib.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alancleyton/ds-demo-lib.git"
+  },
   "scripts": {
     "start": "yarn storybook",
     "build": "rollup -c",
@@ -50,22 +53,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "bundledDependencies": [
-    "styled-system",
-    "@types/styled-system",
-    "styled-components",
-    "polished",
-    "linkifyjs",
-    "linkify-react",
-    "flatlist-react",
-    "yup",
-    "react-hook-form",
-    "@hookform/resolver",
-    "react-modal",
-    "reactjs-popup",
-    "@emoji-mart/data",
-    "@emoji-mart/react"
-  ],
   "peerDependencies": {
     "@emoji-mart/data": "^1.0.8",
     "@emoji-mart/react": "^1.0.1",
@@ -161,6 +148,36 @@
     "react-spinners": "^0.13.6",
     "reactjs-popup": "^2.0.5",
     "tinycolor2": "^1.4.2",
-    "yup": "^0.32.11"
-  }
+    "yup": "^0.32.11",
+    "styled-system": "*",
+    "@types/styled-system": "*",
+    "styled-components": "*",
+    "polished": "*",
+    "@hookform/resolver": "*"
+  },
+  "bundleDependencies": [
+    "styled-system",
+    "@types/styled-system",
+    "styled-components",
+    "polished",
+    "linkifyjs",
+    "linkify-react",
+    "flatlist-react",
+    "yup",
+    "react-hook-form",
+    "@hookform/resolver",
+    "react-modal",
+    "reactjs-popup",
+    "@emoji-mart/data",
+    "@emoji-mart/react"
+  ],
+  "bugs": {
+    "url": "https://github.com/alancleyton/ds-demo-lib/issues"
+  },
+  "homepage": "https://github.com/alancleyton/ds-demo-lib#readme",
+  "keywords": [
+    "Ds",
+    "Demo"
+  ],
+  "author": "Alan Cleyton"
 }
