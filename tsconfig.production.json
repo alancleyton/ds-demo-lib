@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "jest.config.js",
+    ".eslintrc.js",
+    ".prettierrc.js",
+    "enzyme.config.js",
+    "dist",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "src/config",
+    "src/**/**/tests",
+    "src/index.test.ts",
+    "rollup.config.js"
+  ]
+}
